@@ -1,0 +1,56 @@
+.PokemonBasicInfo {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.PokemonBasicInfo-Image {
+  height: 96px;
+  width: 96px;
+  align-self: center;
+}
+
+.PokemonBasicInfo-Image_none {
+  line-height: 96px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 48px;
+  border: 1px solid black;
+}
+
+.PokemonBasicInfo-Badge {
+  &::first-letter {
+    text-transform: capitalize;
+  }
+
+  &:not(:first-child) {
+    margin-left: 5px;
+  }
+}
+
+.PokemonBasicInfo-TypesAndId {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  margin-bottom: 10px;
+}
+
+.PokemonBasicInfo-Id {
+  font-weight: bold;
+  font-size: 1.5em;
+
+  &::before {
+    content: '#'
+  }
+}
+
+.PokemonBasicInfo-Stat {
+  display: flex;
+  justify-content: space-between;
+}
+
+.PokemonBasicInfo-StatName {
+  margin-right: 15px;
+}
